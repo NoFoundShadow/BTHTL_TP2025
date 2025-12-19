@@ -1,13 +1,12 @@
 from flask import Flask, request, jsonify
-import tensorflow as tf
+import tf_keras as keras
 import numpy as np
 from PIL import Image
 
 app = Flask(__name__)
 
 # Chạy model
-model = tf.keras.models.load_model("keras_model.h5")
-
+model = keras.models.load_model("keras_model.h5")
 # Chạy nhãn
 with open("labels.txt", "r") as f:
     labels = [line.strip() for line in f.readlines()]
