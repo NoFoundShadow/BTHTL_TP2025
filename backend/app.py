@@ -5,9 +5,8 @@ from PIL import Image
 
 app = Flask(__name__)
 
-# Chạy model
 model = keras.models.load_model("keras_model.h5")
-# Chạy nhãn
+
 with open("labels.txt", "r") as f:
     labels = [line.strip() for line in f.readlines()]
 
@@ -17,7 +16,6 @@ def preprocess_image(image):
     image = (image / 127.5) - 1
     return np.expand_dims(image, axis=0)
 
-# Dự đoán
 @app.route("/predict", methods=["POST"])
 def predict():
     file = request.files["image"]
