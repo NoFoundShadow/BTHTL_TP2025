@@ -1,10 +1,10 @@
-0 Táo
-1 Bơ
-2 Chuối
-3 Cherry
-4 Kiwi
-5 Mango
-6 Orange
-7 Pineapple
-8 Strawberries
-9 Watermelon
+Táo
+Bơ
+Chuối
+Cherry
+Kiwi
+Mango
+Orange
+Pineapple
+Strawberries
+Watermelon
