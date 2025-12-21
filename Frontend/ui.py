@@ -28,8 +28,7 @@ interface = gr.Interface(
     fn=classify_image,
     inputs=gr.Image(type="filepath", label="Upload ảnh trái cây / rau củ"),
     outputs=gr.Textbox(label="Kết quả nhận diện"),
-    title="🥦 AI Nhận diện Trái cây & Rau củ",
-    description="Quy trình: Image -> Gradio -> Flask API -> Keras Model"
+    title="🥦 AI Nhận diện Trái cây & Rau củ"
 )
 
 if __name__ == "__main__":
